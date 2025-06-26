@@ -152,3 +152,40 @@ main {
   background-color: var(--theme-very-dark-gray);
   cursor: pointer;
 }
+
+.bottom-section {
+  min-width: 1420px;
+  /* height: 33.3%; */
+  display: flex;
+  margin: 0;
+}
+
+.bottom-image {
+  width: 30%;
+}
+
+.bottom-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 3;
+  flex-shrink: 0;
+  overflow: hidden;
+  min-width: 580px;
+  height: 266px;
+}
+.bottom-description > div {
+  width: 510px;
+  height: 160px;
+}
+.bottom-description > div h2 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 18px;
+}
+.bottom-description > div p {
+  color: var(--theme-dark-gray);
+  font-size: 16px;
+  line-height: 22px;
+}
