@@ -67,11 +67,11 @@ function adjustMenu(){
         mobileMenuButton.style.display = "none";
         closeMobileMenuButton.style.display = "inline";
         navOptions.style.display = "flex";
-        navOptions.style.color = "black";
+        navOptions.style.color = "white";
         navOptions.style.position = "absolute";
-        navOptions.style.right = "30px";
-        navBar.style.backgroundColor = "white";
-        navBar.style.height = "120px";
+        navOptions.style.right = "40px";
+        navBar.style.backgroundColor = "transparent";
+        navBar.style.height = "100px";
         navBar.style.top = "0px";
         
         mobileMenuStatus = 1;
