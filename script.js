@@ -1,8 +1,8 @@
-const currImg = 1;
+let currImg = 1;
 const currFeature = ["feature-1", "feature-2", "feature-3"];
 const currFeatureImage = ["feature-image-1", "feature-image-2", "feature-image-3"];
 
-const mobileMenuStatus = 0; // 0 is closed, 1 is opened
+let mobileMenuStatus = 0; // 0 is closed, 1 is opened
 
 window.onload = function(){
     const leftButton = document.getElementById("left-arrow");
