@@ -77,3 +77,56 @@ main {
 #mobile-close-menu-button {
   display: none;
 }
+
+.top-section {
+  min-width: 1420px;
+  display: flex;
+  margin: 0;
+}
+
+.top-image-box {
+  display: flex;
+}
+.top-image-box > img {
+  display: block;
+  height: 100%;
+}
+
+.feature-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 589px;
+  height: 534px;
+  flex-grow: 3;
+  flex-shrink: 0;
+}
+.feature-description .current-box {
+  width: 430px;
+  height: 300px;
+}
+.feature-description .current-box h1 {
+  font-size: 48px;
+  margin-top: 0px;
+}
+.feature-description .current-box p {
+  color: var(--theme-dark-gray);
+  font-size: 16px;
+  line-height: 22px;
+}
+.feature-description .current-box span {
+  display: flex;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.feature-description .current-box span img {
+  margin-left: 18px;
+}
+.feature-description .current-box span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
