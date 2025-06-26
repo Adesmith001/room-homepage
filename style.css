@@ -203,3 +203,49 @@ footer {
 .attribution > a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 420px) {
+  body,
+  main {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    font-family: var(--font-theme-spartan);
+  }
+  .navbar {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+  .navbar > div {
+    width: 275px;
+    display: none;
+  }
+  .navbar > div a {
+    font-weight: 600;
+  }
+  #mobile-menu-button {
+    display: inline;
+    position: absolute;
+    left: 30px;
+  }
+  #mobile-menu-button:hover {
+    cursor: pointer;
+  }
+  #mobile-close-menu-button {
+    display: none;
+    position: absolute;
+    left: 30px;
+  }
+  #mobile-close-menu-button:hover {
+    cursor: pointer;
+  }
+
+}
