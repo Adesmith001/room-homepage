@@ -247,5 +247,29 @@ footer {
   #mobile-close-menu-button:hover {
     cursor: pointer;
   }
-
+  .top-section {
+    width: 100vw;
+    min-width: 0px;
+    flex-direction: column;
+  }
+  .top-image-box {
+    display: flex;
+    width: 100%;
+  }
+  .top-image-box > img {
+    width: 100%;
+  }
+  #feature-image-1 {
+    content: url("./images/mobile-image-hero-1.jpg");
+  }
+  #feature-image-2 {
+    content: url("./images/mobile-image-hero-2.jpg");
+  }
+  #feature-image-3 {
+    content: url("./images/mobile-image-hero-3.jpg");
+  }
+  .feature-description {
+    width: 100vw;
+    height: 360px;
+  }
 }
