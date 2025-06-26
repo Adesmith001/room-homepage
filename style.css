@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+:root {
+  --theme-dark-gray: hsl(0, 0%, 63%);
+  --theme-black: hsl(0, 0%, 0%);
+  --theme-white: hsl(0, 0%, 100%);
+  --theme-very-dark-gray: hsl(0, 0%, 27%);
+  --font-theme-spartan: "League Spartan";
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background: gray;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #000;
+  border-radius: 10px;
+}
+
+body,
+main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: 0;
+  font-family: var(--font-theme-spartan);
+}
+
+.navbar {
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+.navbar > div {
+  width: 275px;
+  display: flex;
+  justify-content: space-between;
+  text-transform: lowercase;
+  color: var(--theme-white);
+}
+.navbar > div a {
+  position: relative;
+}
+.navbar > div a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 110%;
+  transition: all 0.4s;
+  /* animate the underline */
+  color: var(--theme-white);
+}
+.navbar > div a:hover {
+  cursor: pointer;
+}
+.navbar > div a:hover::after {
+  width: 100%;
+}
