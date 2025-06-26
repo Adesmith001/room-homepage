@@ -17,3 +17,40 @@ window.onload = function(){
     const closeMobileMenuButton = document.getElementById("mobile-close-menu-button");
     closeMobileMenuButton.addEventListener("click", adjustMenu);
 }
+
+function shiftImageLeft(){
+    var prevImg = currImg;
+    currImg = currImg - 1;
+    if (currImg == 0){
+        currImg = 3;
+    }
+
+    var retrievePrevImg = document.getElementById(currFeatureImage[prevImg-1]);
+    var retrieveCurrImg = document.getElementById(currFeatureImage[currImg-1]);
+
+    retrievePrevImg.className = "display-none";
+    retrieveCurrImg.className = "";
+
+    var retrievePrevText = document.getElementById(currFeature[prevImg-1]);
+    var retrieveCurrText = document.getElementById(currFeature[currImg-1]);
+
+    retrievePrevText.className = "display-none";
+    retrieveCurrText.className = "current-box";
+}
+
+function shiftImageRight(){
+    var prevImg = currImg;
+    currImg = currImg + 1;
+    if (currImg == 4){
+        currImg = 1;
+    }
+
+    var retrievePrevImg = document.getElementById(currFeatureImage[prevImg-1]);
+    var retrieveCurrImg = document.getElementById(currFeatureImage[currImg-1]);
+    retrievePrevImg.className = "display-none";
+    retrieveCurrImg.className = "";
+    var retrievePrevText = document.getElementById(currFeature [prevImg-1]);
+    var retrieveCurrText = document.getElementById(currFeature [currImg-1]);
+    retrievePrevText.className = "display-none";
+    retrieveCurrText.className = "current-box";
+}
