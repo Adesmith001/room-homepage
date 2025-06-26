@@ -130,3 +130,25 @@ main {
   opacity: 0.5;
   cursor: pointer;
 }
+
+.arrow-box {
+  width: 160px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.arrow-box div {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--theme-black);
+}
+.arrow-box div:hover {
+  background-color: var(--theme-very-dark-gray);
+  cursor: pointer;
+}
