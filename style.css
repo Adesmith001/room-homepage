@@ -65,3 +65,15 @@ main {
 .navbar > div a:hover::after {
   width: 100%;
 }
+
+.display-none {
+  display: none !important;
+}
+
+#mobile-menu-button {
+  display: none;
+}
+
+#mobile-close-menu-button {
+  display: none;
+}
